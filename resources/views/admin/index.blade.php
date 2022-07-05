@@ -97,7 +97,7 @@
             </div><!-- end col -->
         </div><!-- end row -->
 
-        <div class="row">
+        {{-- <div class="row">
             <div class="col-xl-6">
 
                 <div class="card">
@@ -201,11 +201,11 @@
                 </div><!-- end card -->
             </div>
             <!-- end col -->
-        </div>
+        </div> --}}
         <!-- end row -->
 
         <div class="row">
-            <div class="col-xl-8">
+            <div class="col-xl-12">
                 <div class="card">
                     <div class="card-body">
                         <div class="dropdown float-end">
@@ -351,7 +351,7 @@
                 </div><!-- end card -->
             </div>
             <!-- end col -->
-            <div class="col-xl-4">
+            {{-- <div class="col-xl-4">
                 <div class="card">
                     <div class="card-body">
                         <div class="float-end">
@@ -394,7 +394,7 @@
                         </div>
                     </div>
                 </div><!-- end card -->
-            </div><!-- end col -->
+            </div><!-- end col --> --}}
         </div>
         <!-- end row -->
     </div>
