@@ -15,7 +15,7 @@
 
         <div class="p-4">
             <div class="mb-2">
-                <img src="{{ asset('backend/assets/images/layouts/layout-1.jpg') }}" class="img-fluid img-thumbnail" alt="layout-1">
+                <img src="{{ asset('assets/images/layouts/layout-1.jpg') }}" class="img-fluid img-thumbnail" alt="layout-1">
             </div>
 
             <div class="form-check form-switch mb-3">
@@ -24,18 +24,18 @@
             </div>
 
             <div class="mb-2">
-                <img src="{{ asset('backend/assets/images/layouts/layout-2.jpg') }}" class="img-fluid img-thumbnail" alt="layout-2">
+                <img src="{{ asset('assets/images/layouts/layout-2.jpg') }}" class="img-fluid img-thumbnail" alt="layout-2">
             </div>
             <div class="form-check form-switch mb-3">
-                <input class="form-check-input theme-choice" type="checkbox" id="dark-mode-switch" data-bsStyle="{{ asset('backend/assets/css/bootstrap-dark.min.css') }}" data-appStyle="{{ asset('backend/assets/css/app-dark.min.css') }}">
+                <input class="form-check-input theme-choice" type="checkbox" id="dark-mode-switch" data-bsStyle="{{ asset('assets/css/bootstrap-dark.min.css') }}" data-appStyle="{{ asset('assets/css/app-dark.min.css') }}">
                 <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
             </div>
 
             <div class="mb-2">
-                <img src="{{ asset('backend/assets/images/layouts/layout-3.jpg') }}" class="img-fluid img-thumbnail" alt="layout-3">
+                <img src="{{ asset('assets/images/layouts/layout-3.jpg') }}" class="img-fluid img-thumbnail" alt="layout-3">
             </div>
             <div class="form-check form-switch mb-5">
-                <input class="form-check-input theme-choice" type="checkbox" id="rtl-mode-switch" data-appStyle="{{ asset('backend/assets/css/app-rtl.min.css') }}">
+                <input class="form-check-input theme-choice" type="checkbox" id="rtl-mode-switch" data-appStyle="{{ asset('assets/css/app-rtl.min.css') }}">
                 <label class="form-check-label" for="rtl-mode-switch">RTL Mode</label>
             </div>
 
