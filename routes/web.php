@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('admin.app');
+    return view('admin.index');
 })->middleware(['auth','verified'])->name('dashboard');
 
 require __DIR__.'/auth.php';
