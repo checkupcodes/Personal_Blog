@@ -3,40 +3,48 @@
     <div class="page-content">
         <div class="container-fluid">
 
-            <!-- start page title -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                        <h4 class="mb-sm-0">Cards</h4>
+            <div class="card-body">
 
-                        <div class="page-title-right">
-                            <ol class="breadcrumb m-0">
-                                <li class="breadcrumb-item"><a href="javascript: void(0);">UI Elements</a></li>
-                                <li class="breadcrumb-item active">Cards</li>
-                            </ol>
+                <h4 class="card-title">Textual inputs</h4>
+                <form action="">
+                    <div class="row mb-3">
+                        <label for="example-text-input" class="col-sm-2 col-form-label">Name</label>
+                        <div class="col-sm-10">
+                            <input name="name" class="form-control" type="text" value="{{ $editData->name }}"
+                                id="example-text-input">
                         </div>
-
                     </div>
-                </div>
-            </div>
-            <div class="row">
-
-                <div class="col-md-6 col-xl-3">
-
-                    <!-- Simple card -->
-                    <div class="card">
-                        <img class="card-img-top img-fluid" src="assets/images/small/img-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title">Name : {{$adminData->name}}</h4><hr>
-                            <h4 class="card-title">Username : {{$adminData->username}}</h4><hr>
-                            <h4 class="card-title">Email : {{$adminData->email}}</h4><hr>
+                    <div class="row mb-3">
+                        <label for="example-text-input" class="col-sm-2 col-form-label">Username</label>
+                        <div class="col-sm-10">
+                            <input name="username" class="form-control" type="text" value="{{ $editData->username }}"
+                                id="example-text-input">
                         </div>
-                        <a href="{{route('edit.profile')}}" class="btn btn-primary">Edit Profile</a>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="example-text-input" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input name="name" class="form-control" type="text" value="{{ $editData->email }}"
+                                id="example-text-input">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="example-text-input" class="col-sm-2 col-form-label">Profile Image</label>
+                        <div class="col-sm-10">
+                            <input name="profile_images" class="form-control" type="file" value="{{ $editData->name }}"
+                                id="example-text-input">
+                        </div>
                     </div>
 
-                </div>
+                    <div class="row mb-3">
+                        <label for="example-text-input" class="col-sm-2 col-form-label">Profile Image</label>
+                        <div class="col-sm-10">
+                            <img class="rounded avatar-lg" src="{{asset('assets/images/small/img-1.jpg')}} " alt="Card image cap">
+                        </div>
+                    </div>
+                    <input type="submit" name="" id="" value="Update Profile" class="btn btn-primary waves-effect waves-light"> 
+                </form>
             </div>
         </div>
     </div>
-
 @endsection()

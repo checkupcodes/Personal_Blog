@@ -25,7 +25,7 @@
 
                     <!-- Simple card -->
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="assets/images/small/img-1.jpg" alt="Card image cap">
+                        <img class="card-img-top img-fluid" src="{{asset('assets/images/small/img-1.jpg')}} " alt="Card image cap">
                         <div class="card-body">
                             <h4 class="card-title">Name : {{$adminData->name}}</h4><hr>
                             <h4 class="card-title">Username : {{$adminData->username}}</h4><hr>
