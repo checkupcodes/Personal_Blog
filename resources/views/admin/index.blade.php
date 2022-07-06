@@ -1,5 +1,5 @@
 @extends('admin.app')
-@section('admin')
+@section('content')
 
 <div class="page-content">
     <div class="container-fluid">
