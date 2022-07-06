@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Auth\Events\Verified;
+use App\Http\Controllers\AdminController;
+use PHPUnit\TextUI\XmlConfiguration\Group;
+use Illuminate\Auth\Events\Logout;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +19,10 @@ use Illuminate\Auth\Events\Verified;
 
 Route::get('/', function () {
     return view('welcome');
+});
+//Admin All route
+Route::controller(AdminController::class)->group(function(){
+    Route::get('admin/logout','destroy')->name('admin.logout');
 });
 
 Route::get('/dashboard', function () {
