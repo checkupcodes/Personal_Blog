@@ -86,7 +86,6 @@
                case 'info':
                toastr.info(" {{ Session::get('message') }} ");
                break;
-           
                case 'success':
                toastr.success(" {{ Session::get('message') }} ");
                break;
