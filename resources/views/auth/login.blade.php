@@ -12,14 +12,15 @@
     <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}">
 
     <!-- Bootstrap Css -->
-    <link href="{{ asset('assets/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet"
-        type="text/css" />
+    <link href="{{ asset('assets/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet" type="text/css" />
     <!-- Icons Css -->
     <link href="{{ asset('assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
     <!-- App Css-->
     <link href="{{ asset('assets/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
 
+    <!--Toastr-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
+
 
 </head>
 
@@ -33,8 +34,10 @@
                     <div class="text-center mt-4">
                         <div class="mb-3">
                             <a href="index.html" class="auth-logo">
-                                <img src="{{ asset('assets/images/logo/NewLogo.png') }}" height="100" class="logo-dark mx-auto" alt="">
-                                <img src="{{ asset('assets/images/NewLogo.png.png') }}" height="100" class="logo-light mx-auto" alt="">
+                                <img src="{{ asset('assets/images/logo/NewLogo.png') }}" height="100"
+                                    class="logo-dark mx-auto" alt="">
+                                <img src="{{ asset('assets/images/NewLogo.png.png') }}" height="100"
+                                    class="logo-light mx-auto" alt="">
                             </a>
                         </div>
                     </div>
@@ -108,7 +111,31 @@
 
     <script src="{{ asset('assets/js/app.js') }}"></script>
 
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <script>
+        @if (Session::has('message'))
+            var type = "{{ Session::get('alert-type', 'info') }}"
+            switch (type) {
+                case 'info':
+                    toastr.info(" {{ Session::get('message') }} ");
+                    break;
+
+                case 'success':
+                    toastr.success(" {{ Session::get('message') }} ");
+                    break;
+
+                case 'warning':
+                    toastr.warning(" {{ Session::get('message') }} ");
+                    break;
+
+                case 'error':
+                    toastr.error(" {{ Session::get('message') }} ");
+                    break;
+            }
+        @endif
+    </script>
 </body>
 
 </html>
