@@ -18,7 +18,7 @@ use Illuminate\Auth\Events\Logout;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.index');
 });
 //Admin All route
 Route::controller(AdminController::class)->group(function(){
